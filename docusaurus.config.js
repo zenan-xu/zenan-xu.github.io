@@ -46,12 +46,12 @@ const config = {
           path: 'notes',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/zenan-xu/zenan-website',
+            'https://github.com/zenan-xu/zenan-xu.github.io/tree/main',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/zenan-xu/zenan-website',
+            'https://github.com/zenan-xu/zenan-xu.github.io/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
