@@ -1,7 +1,7 @@
 ---
 id: intellij
 sidebar_label: Intellij idea
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Tips (:exclamation: These are MY favorite tips)
