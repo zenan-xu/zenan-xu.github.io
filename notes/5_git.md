@@ -12,5 +12,12 @@ git push origin main
 ```
 `--cached` tells git that you want to keep your local copies of the files
 
+### 
+```git
+git remote add origin https://github.com/.../....git
+git branch -M main
+git push -u origin main
+```
+
 ### Workflow Permission to git denied to github-actions[bot]
 Go to `Setting` -> `Actions` -> `General` -> `Workflow permissions` -> check `Read and write permissions`

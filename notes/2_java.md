@@ -3,8 +3,15 @@ id: java
 sidebar_label: Java
 sidebar_position: 2
 ---
+# Java
 
-## Collections
+### Get size/length
+- String : length()
+- Collections : size()
+- Map : size()
+- Array : length
+
+## Collections / Map
 
 ### ArrayList vs LinkedList
 1. Internal Implementation
@@ -21,4 +28,3 @@ sidebar_position: 2
     * LinkedList is faster in manipulation of data.
 
 
-## Map
