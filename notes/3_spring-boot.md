@@ -17,3 +17,15 @@ Spring Boot auto-configures @EnableKafka if it detects spring-kafka on the class
     * there's a chance that this could be null
     * testability, you will have to use reflection to get this value in here
     * the only time when it is okay to use field injection is within a test
+   
+### Scopes : 
+- singleton
+- prototype
+- request
+- session
+- application
+- websocket
+
+### Steps when a request enters spring application (before arriving in controller)
+
+### Spring security and OAuth2

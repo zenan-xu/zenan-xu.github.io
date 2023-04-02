@@ -1,7 +1,7 @@
 ---
 id: french
 sidebar_label: French
-sidebar_position: 5
+sidebar_position: 2
 ---
 
 - tenir/porter la chandelle 电灯泡
