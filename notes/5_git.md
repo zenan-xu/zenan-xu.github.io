@@ -14,6 +14,9 @@ git push origin main
 
 ### Bind a project to a remote repository
 ```git
+git init
+git add .
+git commit -m "Initial commit"
 git remote add origin https://github.com/.../....git
 git branch -M main
 git push -u origin main
