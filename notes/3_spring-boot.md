@@ -26,6 +26,11 @@ Spring Boot auto-configures @EnableKafka if it detects spring-kafka on the class
 - application
 - websocket
 
+### Get url of database when debugging
+```
+this.jdbcTemplate.getDataSource().getConnection().getMetaData().getURL()
+```
+
 ### Steps when a request enters spring application (before arriving in controller)
 
 ### Spring security and OAuth2
