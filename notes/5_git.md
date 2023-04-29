@@ -1,8 +1,9 @@
 ---
 id: git
-sidebar_label: Git/Github
+sidebar_label: Git / Github
 sidebar_position: 5
 ---
+# Git / Github
 
 ### Show remote url
 ```git

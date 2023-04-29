@@ -5,6 +5,14 @@ sidebar_position: 2
 ---
 # Java
 
+## Javadoc
+
+### Reference a method
+```javadoc
+{@link Class#method()}
+```
+If you get `Symbol ... is inaccessible from here` in Intellij, check [intellij note](https://zenan-xu.github.io/docs/intellij#settings)
+
 ### Get size/length
 - String : length()
 - Collections : size()

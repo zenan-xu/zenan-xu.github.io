@@ -14,6 +14,7 @@ sidebar_position: 2
 - Une âme charitable 好心人 善良的人
 - Faire faux bond (à qqn) 对某人违背诺言
 - Tout en devinant 全靠猜
+- Je t'en veux pas (d'être ...+) 我不责怪你
 ## Jokes
 - C'était pour voir si vous avez suivi
 - Le problème se trouve entre la chaise et le clavier (PEBKAC en anglais, problem exists between keyboard and chair)

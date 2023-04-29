@@ -3,8 +3,8 @@ id: intellij
 sidebar_label: Intellij idea
 sidebar_position: 4
 ---
-
-# Tips (:exclamation: These are MY favorite tips)
+# Intellij idea 
+:exclamation: These are MY favorite tips
 
 
 ## Shortcuts
@@ -37,6 +37,10 @@ ide.win.file.chooser.native=true
 ### Open declaration source in the same tab
 Uncheck `Enable preview tab` in the settings of project view
 
+### Resolve `Symbol ... is inaccessible from here`
+Java | Javadoc | Declaration has problems in Javadoc references
+
+Uncheck `Report inaccessible sympols`
 ## Plugins
 - Pokemon progress
 - GitHub Copilot

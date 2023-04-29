@@ -1,8 +1,10 @@
 ---
 id: spring-boot
-sidebar_label: Spring/Spring-Boot
+sidebar_label: Spring / Spring-Boot
 sidebar_position: 3
 ---
+
+# Spring / Spring-Boot
 
 Spring Boot auto-configures @EnableKafka if it detects spring-kafka on the class path.
 
