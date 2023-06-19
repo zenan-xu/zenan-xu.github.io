@@ -59,3 +59,12 @@ You can see all commits on this head by
 git cherry -v branch_name
 ```
 In the end you should force push `git push -f branch_name`
+
+### Github action not working for firs time
+```
+ /usr/bin/git push origin gh-pages
+  remote: Permission to menu-caidan/menu-caidan.github.io.git denied to github-actions[bot].
+  fatal: unable to access 'https://github.com/xxx/xxx.github.io.git/': The requested URL returned error: 403
+```
+![Github action setting](../static/img/git/github_action_setting.png)
+
