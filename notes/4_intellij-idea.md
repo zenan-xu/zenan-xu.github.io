@@ -9,18 +9,20 @@ sidebar_position: 4
 
 ## Shortcuts
 - `Ctrl+Alt+<-/->` back or forward place, `Alt+<-/->` left or right tab
-- `Ctrl+Shift+I` preview implementation 
 - `Ctrl+Alt+H` search in hierarchy (`ctrl+shift+f`)
+- `Ctrl+Alt+L` format current file
+- `Ctrl+Alt+S` open settings, `Ctrl+Alt+Shift+S` open project settings
+- `Ctrl+Alt+O` optimize import
+- `Ctrl+Shift+I` preview implementation 
+- `Ctrl+Shift+F10`
+- `Ctrl+Shift+Alt+T` show refactoring options
 - `Ctrl+B` go to the declaration, `Ctrl+Alt+B` navigate to an implementation
 - `Ctrl+C/X` copy or cut the whole line
 - `Ctrl+D` duplicate line or selection
 - `Ctrl+E` view the most recently opened files
 - `Ctrl+N` find classes
-- `Ctrl+Shift+F10` 
 - `Ctrl+W` / `Ctrl+Shift+W` increasing or decreasing sections of code near the cursor
-- `Ctrl+Alt+L` format current file
-- `Ctrl+Alt+O` optimize import
-- `Ctrl+Shift+Alt+T` show refactoring options
+- `Ctrl+Y` delete line
 - `Alt+F7` find where something is used
 - `Alt+1` open/close project window
 - `F2` jump to the next error, warning or suggestion.
@@ -30,6 +32,7 @@ sidebar_position: 4
 - `Help` > `Change Memory Settings` > `Edit Custom VM Options`
 
 ## Settings
+- `Appearance` > `Theme` >> [NEWUI] Gradianto Deep Ocean
 - `Editor` > `General` > `Code Completion` >> Uncheck `Match case`, ignore cases for auto-completion
 - `Editor` > `General` > `Apperarance` >> Check `Show method separators`
 - `Editor` > `General` > `Editor Tabls` >> Uncheck `Show tabls in one row` (`tab limit`)
