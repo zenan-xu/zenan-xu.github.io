@@ -37,3 +37,7 @@ sidebar_position: 1
 - amend
 - reset/revert
 - rebase/merge
+
+## CV
+Prepare explanation of technologies
+Precise in the response

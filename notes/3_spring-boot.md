@@ -36,3 +36,30 @@ this.jdbcTemplate.getDataSource().getConnection().getMetaData().getURL()
 ### Steps when a request enters spring application (before arriving in controller)
 
 ### Spring security and OAuth2
+
+### SSL
+Put ssl configuration in application.yml instead of bootstrap.yml
+
+`bootstrap.yml` or `bootstrap.properties`
+It's only used/needed if you're using Spring Cloud and your application's configuration is stored on a remote configuration server (e.g. Spring Cloud Config Server).
+
+From the documentation:
+```
+A Spring Cloud application operates by creating a "bootstrap" context, 
+which is a parent context for the main application. 
+Out of the box it is responsible for loading configuration properties from the external sources, 
+and also decrypting properties in the local external configuration files.
+
+```
+Note that the `bootstrap.yml` or `bootstrap.properties` can contain additional configuration (e.g. defaults) but generally you only need to put bootstrap config here.
+
+```
+server:
+  ssl:
+    key-store: /path/to/keystore.p12
+    key-store-password: password-to-access-keystore
+    key-store-type: pkcs12 (jks)
+    key-alias: tomcat
+    key-password: password-for-the-private-key-if-you-have-any
+    enabled: true (default is true)
+```

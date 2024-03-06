@@ -8,14 +8,25 @@ sidebar_position: 4
 
 
 ## Shortcuts
-- `ctrl+alt+<-/->` back or forward place
-- `alt+<-/->` left or right tab
-- `ctrl+shift+i` preview implementation 
-- `ctrl+alt+h` search in hierarchy (`ctrl+shift+f`)
-- `ctrl+e` recent files
-- `alt+1` open/close project window
+- `Ctrl+Alt+<-/->` back or forward place, `Alt+<-/->` left or right tab
+- `Ctrl+Shift+I` preview implementation 
+- `Ctrl+Alt+H` search in hierarchy (`ctrl+shift+f`)
+- `Ctrl+B` go to the declaration, `Ctrl+Alt+B` navigate to an implementation
+- `Ctrl+C/X` copy or cut the whole line
+- `Ctrl+D` duplicate line or selection
+- `Ctrl+E` view the most recently opened files
+- `Ctrl+N` find classes
+- `Ctrl+Shift+F10` 
+- `Ctrl+W` / `Ctrl+Shift+W` increasing or decreasing sections of code near the cursor
+- `Ctrl+Alt+L` format current file
+- `Ctrl+Alt+O` optimize import
+- `Ctrl+Shift+Alt+T` show refactoring options
+- `Alt+F7` find where something is used
+- `Alt+1` open/close project window
+- `F2` jump to the next error, warning or suggestion.
+- `Alt+J` add selection for next occurrence
 
-- `LocalHistory` > `show History` 
+- `LocalHistory` > `show History`
 - `Help` > `Change Memory Settings` > `Edit Custom VM Options`
 
 ## Settings
