@@ -15,6 +15,13 @@ sidebar_position: 2
 - Faire faux bond (à qqn) 对某人违背诺言
 - Tout en devinant 全靠猜
 - Je t'en veux pas (d'être ...+) 我不责怪你
+- Avoir du pain sur la planche 一堆活要干
+- Il y a anguille sous roche 内有蹊跷
+- c'est l'hopîtale qui se fout de la charité 五十步笑百步
+- C'est vieux commen le monde 很古老，有史以来
+- Raconter des salades 谎话连篇
+- Se lever du pied gauche 一天开始的不顺利
+- Mettre les bouchées doubles 全力以赴
 ## Jokes
 - C'était pour voir si vous avez suivi
 - Le problème se trouve entre la chaise et le clavier (PEBKAC en anglais, problem exists between keyboard and chair)

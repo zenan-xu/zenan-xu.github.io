@@ -13,6 +13,7 @@ sidebar_position: 1
 - Primitive types int, byte, short, long, float, double, boolean and char
 - Garbage Collectors
 - `Default method` is defined with an implementation in an interface
+- Robust handling of Reader
 
 ## Spring
 - Different types of dependency injection
@@ -25,12 +26,14 @@ sidebar_position: 1
 - Inject values at runtime (`@Value` using SpEL)
 - `@Transactional`
 - `@CrossOrigin(origins="...")`
-- OAuth2
+- Spring security / OAuth2
 
-## Angular
+## Angular / Web
 - hooks
 - directives
 - Types of forms (Template-driven and Reactive)
+- ES6 modules strict mode by default
+- Lazy loading
 
 ## Git
 - diff
@@ -41,3 +44,6 @@ sidebar_position: 1
 ## CV
 Prepare explanation of technologies
 Precise in the response
+
+## Others
+- HTTP methods

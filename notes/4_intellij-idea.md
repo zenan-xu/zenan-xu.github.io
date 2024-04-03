@@ -37,10 +37,10 @@ sidebar_position: 4
 - `Editor` > `General` > `Apperarance` >> Check `Show method separators`
 - `Editor` > `General` > `Editor Tabls` >> Uncheck `Show tabls in one row` (`tab limit`)
 
-### Get rid of the pop up message asking to trust certificate
+### Get rid of the pop-up message asking to trust certificate
 File | Settings | Tools | Server Certificates for Windows and linux
 
-### `Openfile or Project` dialog window hangs in loading state since new UI
+### `Open File or Project` dialog window hangs in loading state since new UI
 It's possible to use a native file chooser on Windows. 
 To enable it, add the following properties to the Help | Edit Custom Properties file and restart IDE : 
 ```
