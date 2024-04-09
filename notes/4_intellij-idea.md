@@ -75,3 +75,17 @@ void $METHOD_NAME$() {
 }
 ```
 ![Junit5 live template](../static/img/intellij-idea/junit5_live_template.png)
+
+### Parameterized test with value source
+```
+<template name="pvtest" value="@org.junit.jupiter.params.ParameterizedTest(name = &quot;{index} $SUB_TEST_NAME$ {0}&quot;)&#10;@org.junit.jupiter.api.DisplayName(&quot;$TEST_NAME$&quot;)&#10;@org.junit.jupiter.params.provider.ValueSource($TYPE$ = {})&#10;void $METHOD_NAME$($ARG$) {&#10;    // GIVEN&#10;    &#10;    // WHEN&#10;    &#10;    // THEN&#10;}" description="Parameterized test with value source" toReformat="true" toShortenFQNames="true">
+  <variable name="TEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="SUB_TEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="TYPE" expression="enum(&quot;strings&quot;,&quot;booleans&quot;,&quot;ints&quot;,&quot;longs&quot;,&quot;floats&quot;,&quot;doubles&quot;,&quot;chars&quot;,&quot;shorts&quot;,&quot;bytes&quot;,&quot;classes&quot;)" defaultValue="strings" alwaysStopAt="true" />
+  <variable name="METHOD_NAME" expression="camelCase(TEST_NAME)" defaultValue="" alwaysStopAt="true" />
+  <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_DECLARATION" value="true" />
+  </context>
+</template>
+```
