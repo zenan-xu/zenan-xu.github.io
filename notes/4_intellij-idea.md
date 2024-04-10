@@ -89,3 +89,15 @@ void $METHOD_NAME$() {
   </context>
 </template>
 ```
+### Parameterized test with method source
+```
+<template name="pmtest" value="@org.junit.jupiter.params.ParameterizedTest(name = &quot;{index} $SUB_TEST_NAME$ {0}&quot;)&#10;@org.junit.jupiter.api.DisplayName(&quot;$TEST_NAME$&quot;)&#10;@org.junit.jupiter.params.provider.MethodSource&#10;void $METHOD_NAME$($ARG$) {&#10;    // GIVEN&#10;    &#10;    // WHEN&#10;    &#10;    // THEN&#10;}&#10;&#10;private static java.util.stream.Stream&lt;org.junit.jupiter.params.provider.Arguments&gt; $METHOD_NAME$() {&#10;    return Stream.of(Arguments.of(),&#10;            Arguments.of());&#10;}" description="Parameterized test with method source" toReformat="true" toShortenFQNames="true">
+  <variable name="TEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="SUB_TEST_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="METHOD_NAME" expression="camelCase(TEST_NAME)" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_DECLARATION" value="true" />
+  </context>
+</template>
+```
