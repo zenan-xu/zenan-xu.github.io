@@ -26,6 +26,7 @@ sidebar_position: 4
 - `Alt+F7` find where something is used
 - `Alt+1` open/close project window
 - `F2` jump to the next error, warning or suggestion.
+- `F4` jump to source
 - `Alt+J` add selection for next occurrence
 
 - `LocalHistory` > `show History`
