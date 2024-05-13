@@ -22,6 +22,11 @@ sidebar_position: 2
 - Raconter des salades 谎话连篇
 - Se lever du pied gauche 一天开始的不顺利
 - Mettre les bouchées doubles 全力以赴
+- Bosser comme un chien 累成狗
+- Battre le fer pendant qu'il est chaud 趁热打铁
+- Quand on parle du loup, on en voit le bout de la queue 说曹操曹操就到
+- Il n'y a pas pire sourd que celui qui ne veut pas entendre 永远叫不醒一个装睡的人
+- Avoir les yeux plus gros que le ventre 眼大肚子小
 ## Jokes
 - C'était pour voir si vous avez suivi
 - Le problème se trouve entre la chaise et le clavier (PEBKAC en anglais, problem exists between keyboard and chair)

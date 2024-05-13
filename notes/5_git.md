@@ -5,6 +5,14 @@ sidebar_position: 5
 ---
 # Git / Github
 
+### Clone request
+- HTTPS with `PAT`
+```
+git clone https://username:token@github.com/username/repo.git
+```
+You can also use above command, if you entered git username and password instead of PAT the first time git ask you to authenticate, and you keep getting following error:
+`remote: HTTP Basic: Access denied. The provided password or token is incorrect or your account has 2FA enabled and you must use a personal access token instead of a password`
+
 ### Show remote url
 ```git
 git config --get remote.origin.url
@@ -60,7 +68,7 @@ git cherry -v branch_name
 ```
 In the end you should force push `git push -f branch_name`
 
-### Github action not working for firs time
+### GitHub action not working for firs time
 ```
  /usr/bin/git push origin gh-pages
   remote: Permission to menu-caidan/menu-caidan.github.io.git denied to github-actions[bot].

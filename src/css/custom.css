@@ -43,3 +43,63 @@ div.navbar__items a[href="/docs/intro"] {
 .text-align-left {
   text-align: left;
 }
+
+/*.alert-message {*/
+
+/*  background-color: #f44336;*/
+/*  color: white;*/
+/*  padding: 20px;*/
+/*  text-align: center;*/
+/*  font-size: 1.2rem;*/
+/*}*/
+
+/*.alert-message button {*/
+/*  background-color: transparent;*/
+/*  border: none;*/
+/*  color: white;*/
+/*  font-size: 1.2rem;*/
+/*  margin-left: 10px;*/
+/*  cursor: pointer;*/
+/*}*/
+
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.header-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  background-image: url("../../static/img/icons8-github.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: flex;
+  height: 48px;
+  width: 48px;
+}
+
+.header-linkedin-link:before {
+  background-image: url("../../static/img/icons8-linked-in.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: flex;
+  height: 48px;
+  width: 48px;
+}

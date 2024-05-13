@@ -63,6 +63,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //       'test <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: true,
+      // },
       image: 'img/icon.jpg',
       navbar: {
         title: 'Zenan',
@@ -78,9 +86,19 @@ const config = {
             label: 'Notes',
           },
           {
-            href: 'https://github.com/zenan-xu',
-            label: 'GitHub',
+            href: "https://github.com/zenan-xu",
+            position: "right",
+            className: "header-link header-github-link"
+          },
+          {
+            href: "https://www.linkedin.com/in/zenan-xu15",
+            position: "right",
+            className: "header-link header-linkedin-link"
+          },
+          {
+            type: 'html',
             position: 'right',
+            value: '<a href="mailto:zenan.xu15@gmail.com">@</a>\n',
           },
         ],
       },

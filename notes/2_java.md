@@ -35,6 +35,34 @@ If you get `Symbol ... is inaccessible from here` in Intellij, check [intellij n
     * ArrayList is faster in storing and accessing data.
     * LinkedList is faster in manipulation of data.
 
+### `String.format` with same value multiple times
+
+```
+String s = "%s %1$s %1$s".
+String.format(s, "hello");
+```
+
+### Move one element to first place in a map
+```
+Map<String, String> copy = new LinkedHashMap<>(origin);
+origin.keySet().retainAll(Collections.singleton(value));
+origin.putAll(copy);
+```
+
+## Date handling
+
+### Transform a time in string without time zone info to epoch
+```
+String aDate = "2024-04-30 15:00:00";
+LocalDateTime.parse(aDate, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")).atZone(ZoneOffset.UTC).toInstant().toEpochMilli();
+```
+LocalDateTime does not contain zone info, so it fits to parse this date in string. And then transform to `Instant` with a zone.
+
+### Calculate difference between 2 instants
+```
+ChronoUnit.MINUTES.between(Instant.ofEpochMilli(123L), Instant.ofEpochMilli(Instant.now().toEpochMilli()));
+```
+
 ## Test util
 ### Test private method
 Ex : `Object returnValue = executeMethod(getMethod("methodName", RequestParam.class), testClass, requestParam)`
