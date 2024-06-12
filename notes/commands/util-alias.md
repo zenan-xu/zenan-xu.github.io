@@ -11,6 +11,14 @@ alias _bash='nano ~/.bashrc'
 alias _b='cat ~/.bashrc'
 ```
 
+## Kubernetes
+```kubectl
+alias k=kubectl
+alias kp='k get po -o wide'
+alias kdep='k get deploy -o wide'
+alias kd='k get deploy -o wide | awk "{print \$1, \$7}" | column -t'
+```
+
 ## Maven
 ```
 alias mci='mvn clean install'

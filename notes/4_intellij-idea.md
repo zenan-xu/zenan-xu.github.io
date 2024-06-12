@@ -24,6 +24,7 @@ sidebar_position: 4
 - `Ctrl+W` / `Ctrl+Shift+W` increasing or decreasing sections of code near the cursor
 - `Ctrl+Y` delete line
 - `Alt+F7` find where something is used
+- `Alt+F8` + `Ctrl + Enter` evaluate expression + execute
 - `Alt+1` open/close project window
 - `F2` jump to the next error, warning or suggestion.
 - `F4` jump to source
@@ -37,6 +38,9 @@ sidebar_position: 4
 - `Editor` > `General` > `Code Completion` >> Uncheck `Match case`, ignore cases for auto-completion
 - `Editor` > `General` > `Apperarance` >> Check `Show method separators`
 - `Editor` > `General` > `Editor Tabls` >> Uncheck `Show tabls in one row` (`tab limit`)
+
+### Global setting
+- `File` > `New Projets SetUp` > `Settings for New Projets` >> For ex, Maven settings
 
 ### Get rid of the pop-up message asking to trust certificate
 File | Settings | Tools | Server Certificates for Windows and linux
@@ -60,6 +64,11 @@ Uncheck `Report inaccessible sympols`
 - Pokemon progress
 - GitHub Copilot
 - Rainbow Brackets
+- SequenceDiagram
+- CodeGlance
+- Key Promoter X
+- SonarLint
+- Save Actions
 
 ## Live template
 
@@ -99,6 +108,17 @@ void $METHOD_NAME$() {
   <variable name="METHOD_NAME" expression="camelCase(TEST_NAME)" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="JAVA_DECLARATION" value="true" />
+  </context>
+</template>
+```
+
+### Docusaurus note header
+```
+<template name="noteHeader" value="---&#10;id: $Label$&#10;sidebar_label: $Label$&#10;sidebar_position: $Pos$&#10;---&#10;# $Label$" description="" toReformat="false" toShortenFQNames="true">
+  <variable name="Label" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="Pos" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="OTHER" value="true" />
   </context>
 </template>
 ```

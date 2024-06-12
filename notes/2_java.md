@@ -21,6 +21,17 @@ If you get `Symbol ... is inaccessible from here` in Intellij, check [intellij n
 
 ## Collections / Map
 
+### To have the map with the order of presence in the list when grouping
+```
+list.stream().collect(Collectors.groupingBy(Object::getKey, LinkedHashMap::new, Collectors.toList()));
+```
+
+### add element into ArrayList in HashMap
+```
+Map<String, List<Item>> items = new HashMap<>();
+items.computeIfAbsent(key, k -> new ArrayList<>()).add(item);
+```
+
 ### ArrayList vs LinkedList
 1. Internal Implementation
     * ArrayList internally uses a dynamic array to store its elements.
@@ -30,10 +41,17 @@ If you get `Symbol ... is inaccessible from here` in Intellij, check [intellij n
     * LinkedList is faster being node based as not much bit shifting required.
 3. Implementation
     * ArrayList implements only List. 
-    * LinkedList implements List as well as Queue. It can acts as a queue as well.
+    * LinkedList implements List as well as Queue. It can act as a queue as well.
 4. Access
     * ArrayList is faster in storing and accessing data.
     * LinkedList is faster in manipulation of data.
+
+## String
+
+### Concatenation
+Java does string concatenation using StringBuilder by default for simple cases (checkout the bytecode using `javap -c`).
+
+`String a = b + c + d;` is converted to `String a = new StringBuilder(b).append(c).append(d).toString();`
 
 ### `String.format` with same value multiple times
 
@@ -63,7 +81,23 @@ LocalDateTime does not contain zone info, so it fits to parse this date in strin
 ChronoUnit.MINUTES.between(Instant.ofEpochMilli(123L), Instant.ofEpochMilli(Instant.now().toEpochMilli()));
 ```
 
+## Decimal format 
+
+```
+private DecimalFormat decimalFormat = new DecimalFormat("#,###.00;-#,###.00", new DecimalFormatSymbols(Locale.US));
+```
+Without second parameter, it will use os locale and will cause potential pb, for ex still convert 12.00 to 12,00 if os has french region
+
+`windows os -> settings -> TIme&Language -> region -> regional format`
+
+`String.format(Locale.US, "%,.3f", number)`
+
+## Type erasure
+To understand why primitive data types cannot be used to generics, let's remember that generics are a compile-time feature, meaning the type parameter is erased and all generic types are implemented as type Object.
+Therefore, type parameters must be convertible to Object. Since primitive types don't extend Object, we can't use them as type parameters.
+
 ## Test util
+
 ### Test private method
 Ex : `Object returnValue = executeMethod(getMethod("methodName", RequestParam.class), testClass, requestParam)`
 ```

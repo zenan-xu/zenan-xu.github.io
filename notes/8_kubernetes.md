@@ -9,15 +9,14 @@ sidebar_position: 8
 
 ### Get logs tail of a pod
 ```kubectl
-kubectl logs --tail pod_name
+kubectl logs -f pod_name
+kubectl logs --tail=20 pod_name
+
 ```
 
-### Alias
+### Scale pod number
 ```kubectl
-alias k=kubectl
-alias kp='k get po -o wide'
-alias kdep='k get deploy -o wide'
-alias kd='k get deploy -o wide | awk "{print \$1, \$7}" | column -t'
+kubectl scale --replicas=0 deployment deploy-name
 ```
 
 ### AKS

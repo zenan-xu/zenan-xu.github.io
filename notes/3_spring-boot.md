@@ -65,6 +65,19 @@ Spring Boot auto-configures @EnableKafka if it detects spring-kafka on the class
 this.jdbcTemplate.getDataSource().getConnection().getMetaData().getURL()
 ```
 
+### Get Conditions evaluation report
+```
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: debug
+```
+
+### How http interceptor work (using recursive way)
+check `InterceptingClientHttpRequest#execute`
+
 ### Steps when a request enters spring application (before arriving in controller)
 
 ### Spring security and OAuth2
