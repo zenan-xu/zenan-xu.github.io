@@ -122,3 +122,21 @@ void $METHOD_NAME$() {
   </context>
 </template>
 ```
+### Markdown
+```
+<template name="text" value="`$TEXT$`" description="" toReformat="false" toShortenFQNames="true">
+  <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="OTHER" value="true" />
+  </context>
+</template>
+```
+
+```
+<template name="code" value="```$CODE_TYPE$&#10;&#10;```" description="" toReformat="false" toShortenFQNames="true">
+  <variable name="CODE_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="OTHER" value="true" />
+  </context>
+</template>
+```
