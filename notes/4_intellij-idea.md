@@ -123,6 +123,7 @@ void $METHOD_NAME$() {
 </template>
 ```
 ### Markdown
+- Code
 ```
 <template name="text" value="`$TEXT$`" description="" toReformat="false" toShortenFQNames="true">
   <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
@@ -132,6 +133,7 @@ void $METHOD_NAME$() {
 </template>
 ```
 
+- Code block
 ```
 <template name="code" value="```$CODE_TYPE$&#10;&#10;```" description="" toReformat="false" toShortenFQNames="true">
   <variable name="CODE_TYPE" expression="" defaultValue="" alwaysStopAt="true" />

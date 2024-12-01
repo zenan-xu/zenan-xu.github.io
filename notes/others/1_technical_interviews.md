@@ -14,6 +14,13 @@ sidebar_position: 1
 - Garbage Collectors
 - `Default method` is defined with an implementation in an interface
 - Robust handling of Reader
+- Hash collisions
+
+### Multi threading
+- wait/notify/join
+- different ways to start thread
+- general concepts designing multi thread
+
 
 ## Spring
 - Different types of dependency injection
@@ -47,3 +54,10 @@ Precise in the response
 
 ## Others
 - HTTP methods
+
+
+## To well present
+- Spring pattern CI/DI
+- Multi threading
+- Java principles
+- 

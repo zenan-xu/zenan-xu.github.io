@@ -96,18 +96,26 @@ Without second parameter, it will use os locale and will cause potential pb, for
 To understand why primitive data types cannot be used to generics, let's remember that generics are a compile-time feature, meaning the type parameter is erased and all generic types are implemented as type Object.
 Therefore, type parameters must be convertible to Object. Since primitive types don't extend Object, we can't use them as type parameters.
 
+## Logging
+
+### `log.isDebugEnabled()`
+It's used just for performance reasons. `log.debug(...)` statement won't be evaluated (especially for `+` operator).
+
+If you use `SLF4J`, you can avoid the `log.isDebugEnabled()` call, by using messaging formatting.
+`logger.debug("The entry is {}", entry);` The message formatting will not be evaluated unless debug is enabled.
+
 ## Test util
 
 ### Test private method
-Ex : `Object returnValue = executeMethod(getMethod("methodName", RequestParam.class), testClass, requestParam)`
+Ex : `Object returnValue = executeMethod(getMethod(TestClass.class, "methodName", RequestParam.class), testClass, requestParam)`
 ```
 private static Object executeMethod(Method method, Object obj, Object... params) throws InvocationTargetException, IllegalAccessException {
     method.setAccessible(true);
     return method.invoke(obj, params)
 }
 
-private static Method getMethod(String methodName, Class<?>... clazz) throws NoSuchMethodException {
-   return TestClass.class.getDeclaredMethod(methodName, clazz);
+private static Method getMethod(Class<?>... clazz, String methodName, Class<?>... parameterTypes) throws NoSuchMethodException {
+   return clazz.getDeclaredMethod(methodName, parameterTypes);
 }
 ```
 
